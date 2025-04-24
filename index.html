@@ -8,78 +8,7 @@
 <body>
     <script>
 
-//creo clase para las intancias, objetos con sus propiedade
-        class Media{
-           artista;
-           album;
-            constructor(artista,album){
-                this.artista=artista;
-                this.album=album;
-            }
-            informacion(){
-                console.log("Artista:" + this.artista  + "Album: " + this.album);
-            }
-        }
-        
-        class album extends Media{
-                descripcion;
-                canciones;
-                constructor(album,artista,canciones,descripcion){
-                super(album,artista);
-                this.canciones=canciones;
-                this.descripcion=descripcion;
-            }
-            infAlbum(){
-                console.log("Nombre: " + this.album + " Artista: "+ this.artista+ " Canciones: " + this.canciones+ " Descripción: "+this.descripcion);
-            }  
-            }
-        class cancion extends Media{
-                cancion;
-                duracion;
-                genero;
-                constructor(album,artista,cancion, duracion, genero){
-                super(artista,album);
-                this.cancion=cancion;
-                this.duracion=duracion;
-                this.genero=genero;
-            }
-            infCancion(){
-                console.log(" Album: "+this.album+ " Nombre: " + this.cancion + " Artista:" + this.artista+  " Duracion: "+ this.duracion + " Genero:" + this.genero);
-            }  
-            }
-            /*class artista extends Media{
-            biografia;
-            discografia;
-            constructor(artista,biografia, discografia){
-                super(artista);
-                this.biografia=biografia;
-                this.discografia=discografia;
-            }
-            infArtista(){
-                console.log("Nombre:" + this.artista + "Biografia: "+this.biografia + "Discografica: "+ this.discografia);
-            } 
-            }*/
 
-
-            //creamos arrays con las diferentes canciones de cada album
-            HMHAS=["skinny","lunch","chihiro","birds of a feather","wildflower","the greatest","l amour de ma vie","the diner","bittersuite","blue"];
-
-
-            //pruebas 
-           /*const artista=new media("billie", "Hit me hard and soft");
-           artista.informacion();*/
-            //subclase album
-           const album1= new album("Hit me hard and soft", "billie", HMHAS, "descripcion...")
-           album1.infAlbum();
-
-
-
-            const cancion1= new cancion("Hit me hard and soft","skinny","Billie Eilish","3:40", "Alternativo");
-            cancion1.infCancion()
-
-
-
-            
     </script>
 </body>
 </html>
