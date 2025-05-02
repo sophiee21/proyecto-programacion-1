@@ -72,8 +72,25 @@ table {
     font-style: normal;
 }
 
-.fontsize-5{
-    font-size: 2em;
+.kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+
+.fontsize-4{
+    font-size: 4em;
+}
+
+.fontsize-1-5{
+    font-size: 1.5em;
+}
+
+/*colores*/
+
+.color-principalf4f4f4{
+    color: #f4f4f4;
 }
 
 /*comienza el css de la pagina*/
@@ -82,15 +99,17 @@ table {
 
 .nav{
     margin-top: 1em;
+    
 }
 
 .logo {
-    height: 40px;
     margin-left: 1.5em;
+    font-size: 2em;
 }
 
 .esp-5{
     gap: 5em;
+    
 }
 
 .marginR-1-5{
@@ -100,15 +119,21 @@ table {
 /*album cover*/
 
 .album-cover{
-    height: 300px;
+    height: 400px;
+}
+
+.portada{
+    height: 150px;
+    width: 10em;
+    filter: drop-shadow(1px 4px 7px #000000); /*horizontal vertical difuminado*/
 }
 
 /*flexbox*/
 
-.flex-container , .spbt , .jcc , .dcolumn , .aicenter{/*convierte al contenedor en flexible*/
+.flex-container{/*convierte al contenedor en flexible*/
     display: flex;
 }
-  
+
 .spbt{
     justify-content: space-between;
 }
@@ -116,7 +141,6 @@ table {
 .jcc{
     justify-content: center;
 }
-  
   
 .aicenter{/*alinea los items al centro*/
     align-items: center;
@@ -156,6 +180,264 @@ table {
 
 /*width*/
 
-.width{
-    width: 13em;
+.width13{
+    width: 6em;
 }
+
+.width20{
+    width: 20em;
+}
+
+.width80{
+    width: 70%;
+    text-align: center;
+}
+
+/*margins*/
+.marginT-05{
+    margin-top: 0.5em;
+}
+
+.marginT{
+    margin-top: 1em;
+}
+
+.ta-justify{
+    text-align: justify;
+}
+
+/*HOME*/
+
+.album-galery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 1em 1em;
+    padding: 2em 2em;
+    
+}
+
+.album-galery img{
+    width: 100%;
+
+}
+
+.cover-estilo{
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 7px #000000); /*horizontal vertical difuminado*/
+}
+
+
+/*FONDO DE LAS PAGINAS*/
+
+body#home{
+    background: url(../images/back-home.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+}
+
+body#hmhas{
+    background: url(../images/back.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+}
+
+body#clancy{
+    background: url(../images/back-clancy.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+}
+
+body#wings{
+    background: url(../images/back.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+}
+
+
+/*botones artista y album*/
+
+button{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 800;
+    margin: 0;
+    padding: 0.5em 3em;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+button:hover{
+    color: #F4F4F4;
+    background: #0C121A;
+    border: none;
+    border-radius: 5em;
+}
+
+/*FOOTER*/
+
+.footer-home{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #0000004d;
+}
+
+/*canciones*/
+.cancionesalb1 {
+    margin-top: 0.5em;
+    width: 70%;
+}
+
+.cancionesalb1:hover {
+    width: 70%;
+}
+
+.cancion1 h5{
+    color: #ffffff77; 
+}
+
+.cancion1-nombre{
+    margin-right: 1em;
+}
+
+.cancion1{/*clase del div*/
+    color: #F4F4F4;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+
+.cancion1:hover{
+    border-radius: 0.2em;
+    color: #0C121A;
+    background-color: #f4f4f43c;
+}
+/*album 2*/
+.cancionesalb2 {
+    margin-top: 0.5em;
+    width: 70%;
+}
+
+.cancionesalb2:hover {
+    width: 70%;
+}
+
+.cancion2 h5{
+    color: #ffffff77; 
+}
+
+.cancion2-nombre{
+    margin-right: 1em;
+}
+
+.cancion2{/*clase del div*/
+    color: #F4F4F4;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+
+.cancion2:hover{
+    border-radius: 0.2em;
+    color: #0C121A;
+    background-color: #f4f4f43c;
+}
+
+/*album 3*/
+.cancionesalb3 {
+    margin-top: 0.5em;
+    width: 70%;
+}
+
+.cancionesalb3:hover {
+    width: 70%;
+}
+
+.cancion3 h5{
+    color: #ffffff77; 
+}
+
+.cancion3-nombre{
+    margin-right: 1em;
+}
+
+.cancion3{/*clase del div*/
+    color: #F4F4F4;
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-between;
+}
+
+.cancion3:hover{
+    border-radius: 0.2em;
+    color: #0C121A;
+    background-color: #f4f4f43c;
+}
+
+.estiloalbum3{
+    padding-left: 1em;
+}
+
+
+/*botones musica*/
+
+.icono-musica{
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+.bt-music{
+    margin-right: 1em;
+}
+
+
+
+/* --------------------MEDIA QUERIES---------------------------- */
+
+  /* -------mobile------- */
+  @media only screen and (max-width:650px){
+    body#hmhas{
+        background: #353347;
+    }
+    .color-principalf4f4f4{
+        color:#0C121A;
+    }
+    #album1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #info-container{
+        display: flex;
+    }
+    .portada{
+        margin-top: 2em;
+        width: 100%;
+        height: auto;
+    }
+
+    .marginT{
+        margin-top: 1.5em;
+    }
+
+    .nav{
+        margin: 0;
+    }
+  }
